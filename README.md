@@ -8,6 +8,8 @@ Usage
 ===========
 
 Add this in protected/config/main.php of Yii
+
+
 `'components'=>array(
             'RemotePrint' => array(
             'class' => 'RemotePrint',
@@ -21,5 +23,5 @@ Where ip is the IP of coputer in which printer is connected. Port id the port of
 
 Do print from your controller as 
 
-`$data = 'Test Print';
-echo Yii::app()->RemotePrint->print_data($data);`
+`$data = 'Test Print';`
+`echo Yii::app()->RemotePrint->print_data($data);`
