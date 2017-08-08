@@ -19,7 +19,7 @@ Add this in protected/config/main.php of Yii
 )`
 
 
-Where ip is the IP of coputer in which printer is connected. Port id the port of cups printer, default 631.
+Where ip is the IP of computer in which the printer is connected. Port id the port of cups printer, default 631.
 
 Do print from your controller as 
 
