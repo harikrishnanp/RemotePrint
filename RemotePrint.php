@@ -6,30 +6,35 @@
  * Time: 4:28 PM
  * To change this template use File | Settings | File Templates.
  */
-class RemotePrint{
+class RemotePrint
+{
     public $ip;
     public $port;
     private $error = 'Error. ';
 
-    public function init(){
+    public function init()
+    {
 
     }
 
-    public function test_connection(){
+    public function test_connection()
+    {
         //telnet ip port
         if(0){
             $this->error = 'Connection to remote printer failed. Please check IP or Port';
         }
     }
 
-    public function test_exec(){
+    public function test_exec()
+    {
         //check exec enabled or not
         if(!function_exists('exec')){
             $this->error = 'exec() function is disabled in your php.ini, please enable it.';
         }
     }
 
-    public function print_data($data){
+    public function print_data($data)
+    {
 
         if($data == ''){
             return 'Nothing to print. Data is empty';
